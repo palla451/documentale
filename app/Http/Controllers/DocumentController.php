@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Document;
+use App\Models\Document;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
@@ -13,6 +13,12 @@ use Yajra\DataTables\Facades\DataTables;
 
 class DocumentController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -79,7 +85,7 @@ class DocumentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Document  $document
+     * @param  \App\Models\Document  $document
      * @return ResponseAlias
      */
     public function show(Document $document)
@@ -90,7 +96,7 @@ class DocumentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Document  $document
+     * @param  \App\Models\Document  $document
      * @return ResponseAlias
      */
     public function edit(Document $document)
@@ -102,7 +108,7 @@ class DocumentController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param  \App\Document  $document
+     * @param  \App\Models\Document  $document
      * @return ResponseAlias
      */
     public function update(Request $request, Document $document)
@@ -113,7 +119,7 @@ class DocumentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Document  $document
+     * @param  \App\Models\Document  $document
      * @return ResponseAlias
      */
     public function destroy(Document $document)

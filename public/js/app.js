@@ -49940,8 +49940,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ironman/Workspace/document/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/ironman/Workspace/document/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/ironman/Workspace/documentale/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/ironman/Workspace/documentale/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
